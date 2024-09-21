@@ -157,12 +157,12 @@ categoryDOM.addEventListener("click",(e)=>{
     categoryDOM.children[count1].classList.remove("active")
   }
   //Button active add 
-  e.toElement.classList.add("active")
+  e.target.classList.add("active")
   
   // ELement not equal All
-  if(e.toElement.innerHTML!="All")
+  if(e.target.innerHTML!="All")
   {
-    newElements=menu.filter(menu=>menu.category==e.toElement.innerHTML)
+    newElements=menu.filter(menu=>menu.category==e.target.innerHTML)
   }
   //Element equal All
   else
